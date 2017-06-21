@@ -1,6 +1,8 @@
 <ul class="list-group">
 {{#each todos}}
-	<li class="list-group-item">{{title}}</li>
+	<a href="/todo/{{id}}" class="list-group-item">
+		{{title}} <span class="badge">{{priority}}</span>
+	</a>
 
 {{/each}}
 </ul>

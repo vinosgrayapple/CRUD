@@ -1,0 +1,20 @@
+<div class="card w-50">
+  <div class="card-block">
+    <h3 class="card-title">{{title}}     <span class="badge">{{priority}}<span></h3>
+    <p class="card-text">{{description}}</p>
+    <a href="/todo" class="" type="submit" name="action"> <i class="material-icons left">undo</i> Go Back</a>
+    {{!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button> --}}
+  </div>
+</div>
+
+<br><br>
+
+<form action="/todo/{{id}}?_method=DELETE" method="post">
+	
+	 <a href="/todo/{{id}}/edit" type="button" class="btn btn-default btn-warning">
+    Edit todo
+  </a>
+	<button type="submit" class="btn btn-danger">Delete todo</button>
+</form>
